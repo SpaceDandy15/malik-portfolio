@@ -270,6 +270,7 @@ export default function MalikPortfolioReact() {
             <SectionHeading
               eyebrow="Featured Work"
               title="Projects that show how I like to build"
+              body=""
             />
 
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -339,6 +340,7 @@ export default function MalikPortfolioReact() {
             <SectionHeading
               eyebrow="About"
               title="More than a web portfolio"
+              body=""
             
             />
 
@@ -406,6 +408,7 @@ export default function MalikPortfolioReact() {
             <SectionHeading
               eyebrow="Capabilities"
               title="MY TECH STACK"
+              body=""
               />
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
               {skillGroups.map((group, index) => (
