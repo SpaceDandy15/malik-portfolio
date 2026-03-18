@@ -29,7 +29,7 @@ const projects = [
       "A real-time RC aerial combat system using onboard vision, wireless communication, and synchronized app feedback. Built to connect hardware, firmware, and software into one interactive experience.",
     tags: ["ESP32", "OpenMV", "LoRa", "Firmware", "System Design"],
     image:
-      "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?auto=format&fit=crop&w=1200&q=80",
+      "images/aeroduel.gif",
     links: [
       { label: "GitHub", href: "https://github.com/Aeroduel" },
       { label: "Demo", href: "https://lnkd.in/gpDyZxcH" },
@@ -43,7 +43,7 @@ const projects = [
       "A retro-inspired music experience that blends vinyl-style visuals with modern streaming controls and animated playback behavior.",
     tags: ["JavaScript", "UI Animation", "YouTube API", "Responsive UI"],
     image:
-      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80",
+      "images/turntable.jpg",
     links: [{ label: "GitHub", href: "https://github.com/maxnchief/dj-turntable" }],
   },
   {
@@ -53,7 +53,7 @@ const projects = [
       "A procedurally generated maze game built with Python, Flask, and JavaScript, focused on logic, progression, and interactive exploration.",
     tags: ["Python", "Flask", "JavaScript", "Game Logic"],
     image:
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80",
+      "images/tourist-sim.jpg",
     links: [{ label: "GitHub", href: "https://github.com/chepeniv/tourist_sim" }],
   },
   {
@@ -63,11 +63,11 @@ const projects = [
       "A custom API project centered around ingesting quote data, shaping clean endpoints, and serving structured content through a backend workflow.",
     tags: ["Python", "PostgreSQL", "APIs", "Data Loading"],
     image:
-      "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1200&q=80",
+        "images/S-logo.png",
     links: [{ label: "GitHub", href: "https://github.com/SpaceDandy15" }],
   },
   {
-    title: "3D Printed Systems Lab",
+    title: "3D Printed Projects",
     category: "Future Project Lane",
     description:
       "A dedicated space for custom 3D printed builds, embedded devices, product prototypes, and physical projects I design and document myself.",
@@ -82,17 +82,17 @@ const skillGroups = [
   {
     icon: <Code2 className="h-5 w-5" />,
     title: "Frontend",
-    items: ["React", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS"],
+    items: ["Html", "Css", "React", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS"],
   },
   {
     icon: <Layers3 className="h-5 w-5" />,
     title: "Backend",
-    items: ["Node.js", "Express", "Python", "Flask", "REST APIs", "PostgreSQL"],
+    items: ["JavaScript", "Node.js", "Express", "Python", "Flask", "REST APIs", "PostgreSQL"],
   },
   {
     icon: <CircuitBoard className="h-5 w-5" />,
     title: "Embedded",
-    items: ["ESP32", "LoRa", "OpenMV", "C/C++", "Serial Communication"],
+    items: ["Arduino", "ESP32", "LoRa", "OpenMV", "C/C++", "Serial Communication"],
   },
   {
     icon: <Box className="h-5 w-5" />,
@@ -267,7 +267,6 @@ export default function MalikPortfolioReact() {
             <SectionHeading
               eyebrow="Featured Work"
               title="Projects that show how I like to build"
-              body="This layout is meant to support software projects, embedded systems, and eventually your own 3D printed product builds without making the site feel cramped or generic."
             />
 
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -337,7 +336,7 @@ export default function MalikPortfolioReact() {
             <SectionHeading
               eyebrow="About"
               title="More than a web portfolio"
-              body="This redesign leans into your strongest differentiator: you do software, but you also think in systems, devices, interaction, and physical builds."
+            
             />
 
             <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
@@ -376,10 +375,10 @@ export default function MalikPortfolioReact() {
                       Positioning
                     </p>
                     <h3 className="mt-3 text-2xl font-bold text-white">
-                      Full-Stack Developer + Embedded Builder + Prototype Maker
+                      Full-Stack Developer + Embedded Sytems & Product Builder
                     </h3>
                     <p className="mt-4 text-sm leading-7 text-slate-300">
-                      That combo gives your site a much stronger identity than a standard junior developer portfolio.
+                      Connecting hardware and software is where I thrive! My work sits at the intersection of full-stack development, embedded systems, and physical product design — projects that combine code, interactivity, and real-world impact. 
                     </p>
                   </CardContent>
                 </Card>
@@ -389,10 +388,8 @@ export default function MalikPortfolioReact() {
                     <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
                       Future content lane
                     </p>
-                    <h3 className="mt-3 text-xl font-bold text-white">3D printed project pages</h3>
+                    <h3 className="mt-3 text-xl font-bold text-white"></h3>
                     <p className="mt-4 text-sm leading-7 text-slate-300">
-                      You can use this design system to add detailed case studies for printed parts, CAD iterations,
-                      wiring diagrams, firmware notes, photos, demo videos, and finished builds.
                     </p>
                   </CardContent>
                 </Card>
@@ -405,10 +402,8 @@ export default function MalikPortfolioReact() {
           <div className="mx-auto max-w-7xl">
             <SectionHeading
               eyebrow="Capabilities"
-              title="The stack behind the builds"
-              body="This section is structured to make it easy for recruiters and collaborators to see both your software range and your hardware direction at a glance."
-            />
-
+              title="MY TECH STACK"
+              />
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
               {skillGroups.map((group, index) => (
                 <motion.div
@@ -461,7 +456,7 @@ export default function MalikPortfolioReact() {
 
                 <div className="flex flex-wrap gap-3 md:justify-end">
                   <Button asChild size="lg" className="rounded-full px-6">
-                    <a href="mailto:MalikOVance@Atlasschool.com">
+                    <a href="mailto:MalikOVance@gmail.com">
                       <Mail className="mr-2 h-4 w-4" /> Email
                     </a>
                   </Button>
@@ -492,7 +487,7 @@ export default function MalikPortfolioReact() {
             <a href="https://www.linkedin.com/in/malik-vance" target="_blank" rel="noreferrer" className="transition hover:text-white">
               <Linkedin className="h-4 w-4" />
             </a>
-            <a href="mailto:MalikOVance@Atlasschool.com" className="transition hover:text-white">
+            <a href="mailto:MalikOVance@gmail.com" className="transition hover:text-white">
               <Mail className="h-4 w-4" />
             </a>
           </div>
