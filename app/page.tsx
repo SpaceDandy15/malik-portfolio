@@ -126,7 +126,7 @@ function SectionHeading({
 }: {
   eyebrow: string;
   title: string;
-  body: string;
+  body?: string;
 }) {
   return (
     <div className="mb-8 flex flex-col gap-3 md:mb-10 md:flex-row md:items-end md:justify-between">
@@ -341,7 +341,6 @@ export default function MalikPortfolioReact() {
               eyebrow="About"
               title="More than a web portfolio"
               body=""
-            
             />
 
             <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
