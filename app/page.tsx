@@ -205,11 +205,14 @@ export default function MalikPortfolioReact() {
                     Explore Projects <ChevronRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="rounded-full border-white/15 bg-white/5 px-6 text-white hover:bg-white/10">
-                  <a href="docs/Resume.pdf" target="_blank" rel="noreferrer">
-                    View Resume
-                  </a>
-                </Button>
+                <Button asChild
+                size="lg"
+                className="rounded-full px-8 text-base font-semibold bg-gradient-to-r from-cyan-400 to-blue-500 hover:opacity-90"
+>
+  <a href="/docs/Resume.pdf" target="_blank">
+    View Resume
+  </a>
+</Button>
               </div>
 
               <div className="mt-10 grid gap-4 sm:grid-cols-3">
